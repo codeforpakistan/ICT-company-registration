@@ -1,0 +1,59 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select, select2,
+textarea {
+    /*max-width: 280px;*/
+    max-width: 100% !important;
+}
+.hidden{
+    display:none;
+}
+.control-label {
+    display: inline-block;
+    margin-bottom: -0.5rem !important;
+    margin-top: 0.5rem;
+}
+.input-validation-error {
+    border: 1px solid red;
+}
+.field-validation-error>span{
+    color:red;
+}
+.alert-success {
+    color: #eff2f0 !important;
+    background-color: #67a275 !important;
+    border-color: #a8b4ab;
+}
+.bg-success {
+    background-color: #67a275 !important;
+}
+.btn-success {
+   
+    background-color: #67a275 !important;
+
+}
+.select2-container--default .select2-results__option--highlighted {
+    background-color: #67a275 !important;
+}
+.form-control:focus {
+    border-color: #055208 !important;
+    box-shadow: 0 0 0 0.2rem rgb(190 232 200) !important;
+}

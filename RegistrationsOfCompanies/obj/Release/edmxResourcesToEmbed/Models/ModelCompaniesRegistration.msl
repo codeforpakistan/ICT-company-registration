@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="companies_registrationModelStoreContainer" CdmEntityContainer="companies_registrationEntities">
+    <EntitySetMapping Name="basic_detail">
+      <EntityTypeMapping TypeName="companies_registrationModel.basic_detail">
+        <MappingFragment StoreEntitySet="basic_detail">
+          <ScalarProperty Name="other_details" ColumnName="other_details" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="district_id" ColumnName="district_id" />
+          <ScalarProperty Name="province_id" ColumnName="province_id" />
+          <ScalarProperty Name="country_id" ColumnName="country_id" />
+          <ScalarProperty Name="phone_number" ColumnName="phone_number" />
+          <ScalarProperty Name="mobile_number" ColumnName="mobile_number" />
+          <ScalarProperty Name="email_address" ColumnName="email_address" />
+          <ScalarProperty Name="is_company" ColumnName="is_company" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="basic_id" ColumnName="basic_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="business_detail">
+      <EntityTypeMapping TypeName="companies_registrationModel.business_detail">
+        <MappingFragment StoreEntitySet="business_detail">
+          <ScalarProperty Name="other_service_detail" ColumnName="other_service_detail" />
+          <ScalarProperty Name="hardware_info" ColumnName="hardware_info" />
+          <ScalarProperty Name="no_of_employees" ColumnName="no_of_employees" />
+          <ScalarProperty Name="company_short_description" ColumnName="company_short_description" />
+          <ScalarProperty Name="registration_with_pseb" ColumnName="registration_with_pseb" />
+          <ScalarProperty Name="registration_with" ColumnName="registration_with" />
+          <ScalarProperty Name="operational_since" ColumnName="operational_since" />
+          <ScalarProperty Name="regional_office_address" ColumnName="regional_office_address" />
+          <ScalarProperty Name="principal_address" ColumnName="principal_address" />
+          <ScalarProperty Name="annual_turnover" ColumnName="annual_turnover" />
+          <ScalarProperty Name="office_number" ColumnName="office_number" />
+          <ScalarProperty Name="contact_person_name" ColumnName="contact_person_name" />
+          <ScalarProperty Name="business_email" ColumnName="business_email" />
+          <ScalarProperty Name="comapy_website" ColumnName="comapy_website" />
+          <ScalarProperty Name="company_name" ColumnName="company_name" />
+          <ScalarProperty Name="city_in_kp" ColumnName="city_in_kp" />
+          <ScalarProperty Name="business_in_kp_district_id" ColumnName="business_in_kp_district_id" />
+          <ScalarProperty Name="principal_distict_id" ColumnName="principal_distict_id" />
+          <ScalarProperty Name="princiapal_province_id" ColumnName="princiapal_province_id" />
+          <ScalarProperty Name="principal_country_id" ColumnName="principal_country_id" />
+          <ScalarProperty Name="basic_id" ColumnName="basic_id" />
+          <ScalarProperty Name="business_id" ColumnName="business_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="cities">
+      <EntityTypeMapping TypeName="companies_registrationModel.city">
+        <MappingFragment StoreEntitySet="cities">
+          <ScalarProperty Name="ProvinceId" ColumnName="ProvinceId" />
+          <ScalarProperty Name="CityName" ColumnName="CityName" />
+          <ScalarProperty Name="CityId" ColumnName="CityId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="countries">
+      <EntityTypeMapping TypeName="companies_registrationModel.country">
+        <MappingFragment StoreEntitySet="countries">
+          <ScalarProperty Name="language" ColumnName="language" />
+          <ScalarProperty Name="country_code" ColumnName="country_code" />
+          <ScalarProperty Name="country_name" ColumnName="country_name" />
+          <ScalarProperty Name="country_id" ColumnName="country_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dev_bpo_area">
+      <EntityTypeMapping TypeName="companies_registrationModel.dev_bpo_area">
+        <MappingFragment StoreEntitySet="dev_bpo_area">
+          <ScalarProperty Name="AreaID" ColumnName="AreaID" />
+          <ScalarProperty Name="basic_ID" ColumnName="basic_ID" />
+          <ScalarProperty Name="dev_bpo_area_id" ColumnName="dev_bpo_area_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="districts">
+      <EntityTypeMapping TypeName="companies_registrationModel.district">
+        <MappingFragment StoreEntitySet="district">
+          <ScalarProperty Name="province_id" ColumnName="province_id" />
+          <ScalarProperty Name="district_name" ColumnName="district_name" />
+          <ScalarProperty Name="district_id" ColumnName="district_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="employee_detail">
+      <EntityTypeMapping TypeName="companies_registrationModel.employee_detail">
+        <MappingFragment StoreEntitySet="employee_detail">
+          <ScalarProperty Name="number_of_resources" ColumnName="number_of_resources" />
+          <ScalarProperty Name="designation_id" ColumnName="designation_id" />
+          <ScalarProperty Name="basic_id" ColumnName="basic_id" />
+          <ScalarProperty Name="employee_id" ColumnName="employee_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="employee_skills">
+      <EntityTypeMapping TypeName="companies_registrationModel.employee_skills">
+        <MappingFragment StoreEntitySet="employee_skills">
+          <ScalarProperty Name="skill_id" ColumnName="skill_id" />
+          <ScalarProperty Name="employee_id" ColumnName="employee_id" />
+          <ScalarProperty Name="employee_skills_id" ColumnName="employee_skills_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="positions">
+      <EntityTypeMapping TypeName="companies_registrationModel.position">
+        <MappingFragment StoreEntitySet="position">
+          <ScalarProperty Name="position_title" ColumnName="position_title" />
+          <ScalarProperty Name="position_id" ColumnName="position_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="provinces">
+      <EntityTypeMapping TypeName="companies_registrationModel.province">
+        <MappingFragment StoreEntitySet="province">
+          <ScalarProperty Name="country_id" ColumnName="country_id" />
+          <ScalarProperty Name="province_name" ColumnName="province_name" />
+          <ScalarProperty Name="province_id" ColumnName="province_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ServicesAreas">
+      <EntityTypeMapping TypeName="companies_registrationModel.ServicesArea">
+        <MappingFragment StoreEntitySet="ServicesArea">
+          <ScalarProperty Name="AreaName" ColumnName="AreaName" />
+          <ScalarProperty Name="AreaType" ColumnName="AreaType" />
+          <ScalarProperty Name="AreaID" ColumnName="AreaID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="skills">
+      <EntityTypeMapping TypeName="companies_registrationModel.skill">
+        <MappingFragment StoreEntitySet="skills">
+          <ScalarProperty Name="skill_name" ColumnName="skill_name" />
+          <ScalarProperty Name="skill_id" ColumnName="skill_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="system_user">
+      <EntityTypeMapping TypeName="companies_registrationModel.system_user">
+        <MappingFragment StoreEntitySet="system_user">
+          <ScalarProperty Name="other_detail" ColumnName="other_detail" />
+          <ScalarProperty Name="is_active" ColumnName="is_active" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="email_id" ColumnName="email_id" />
+          <ScalarProperty Name="role_id" ColumnName="role_id" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="user_role">
+      <EntityTypeMapping TypeName="companies_registrationModel.user_role">
+        <MappingFragment StoreEntitySet="user_role">
+          <ScalarProperty Name="role_details" ColumnName="role_details" />
+          <ScalarProperty Name="role_title" ColumnName="role_title" />
+          <ScalarProperty Name="role_id" ColumnName="role_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

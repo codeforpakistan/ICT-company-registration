@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="8c691bbb22794fc2a581cf6939a0c15b" Name="Diagram1" ZoomLevel="114">
+        <EntityTypeShape EntityType="companies_registrationModel.basic_detail" Width="1.5" PointX="7.5" PointY="9.25" />
+        <EntityTypeShape EntityType="companies_registrationModel.business_detail" Width="1.5" PointX="9.75" PointY="8.5" />
+        <EntityTypeShape EntityType="companies_registrationModel.city" Width="1.5" PointX="7.5" PointY="6.5" />
+        <EntityTypeShape EntityType="companies_registrationModel.country" Width="1.5" PointX="0.75" PointY="7.625" />
+        <EntityTypeShape EntityType="companies_registrationModel.dev_bpo_area" Width="1.5" PointX="9.75" PointY="20.125" />
+        <EntityTypeShape EntityType="companies_registrationModel.district" Width="1.5" PointX="5.25" PointY="12.75" />
+        <EntityTypeShape EntityType="companies_registrationModel.employee_detail" Width="1.5" PointX="12.75" PointY="10.25" />
+        <EntityTypeShape EntityType="companies_registrationModel.employee_skills" Width="1.5" PointX="15" PointY="10.375" />
+        <EntityTypeShape EntityType="companies_registrationModel.position" Width="1.5" PointX="10.5" PointY="5.625" />
+        <EntityTypeShape EntityType="companies_registrationModel.province" Width="1.5" PointX="3" PointY="12.75" />
+        <EntityTypeShape EntityType="companies_registrationModel.ServicesArea" Width="1.5" PointX="0.75" PointY="4.75" />
+        <EntityTypeShape EntityType="companies_registrationModel.skill" Width="1.5" PointX="12.75" PointY="7.625" />
+        <EntityTypeShape EntityType="companies_registrationModel.system_user" Width="1.5" PointX="3" PointY="1" />
+        <EntityTypeShape EntityType="companies_registrationModel.user_role" Width="1.5" PointX="0.75" PointY="1.25" />
+        <AssociationConnector Association="companies_registrationModel.FK_basic_detail_country" />
+        <AssociationConnector Association="companies_registrationModel.FK_basic_detail_district" />
+        <AssociationConnector Association="companies_registrationModel.FK_basic_detail_province" />
+        <AssociationConnector Association="companies_registrationModel.FK_business_detail_basic_detail" />
+        <AssociationConnector Association="companies_registrationModel.FK_dev_bpo_area_basic_detail" />
+        <AssociationConnector Association="companies_registrationModel.FK_Employee_basic_detail" />
+        <AssociationConnector Association="companies_registrationModel.FK_business_detail_Cities" />
+        <AssociationConnector Association="companies_registrationModel.FK_business_detail_country" />
+        <AssociationConnector Association="companies_registrationModel.FK_business_detail_district" />
+        <AssociationConnector Association="companies_registrationModel.FK_business_detail_province" />
+        <AssociationConnector Association="companies_registrationModel.FK_province_country" />
+        <AssociationConnector Association="companies_registrationModel.FK_district_province" />
+        <AssociationConnector Association="companies_registrationModel.FK_Employee_position" />
+        <AssociationConnector Association="companies_registrationModel.FK_employee_skills_Employee" />
+        <AssociationConnector Association="companies_registrationModel.FK_employee_skills_skills" />
+        <AssociationConnector Association="companies_registrationModel.FK_system_user_user_role" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

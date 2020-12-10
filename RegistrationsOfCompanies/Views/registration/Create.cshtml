@@ -1,0 +1,523 @@
+﻿@model RegistrationsOfCompanies.Models.registration_vm
+@{
+    ViewBag.Title = "Create";
+}
+<style>
+    #header {
+        min-height: 540px;
+        background: url('/Awwwroot/images/kpitbreg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+        color: #ffffff;
+    }
+</style>
+
+<section id="header" class="mt-1">
+</section>
+<section class="mt-auto">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-white">
+        <div class="container-fluid" style="border-bottom: 4px solid #28a745 !important;">
+            <div class="col-md-4 py-1 px-0">
+                <img src="~/Awwwroot/images/kpitblogo.png" style="height:40px;">
+            </div>
+            <div class="col-md-4 py-1 text-center">
+                <h6 class="font-weight-bold text-success">Registration of ICT Companies/Individual or Freelancer with KPITB</h6>
+            </div>
+            <div class="col-md-4 py-1 px-0">
+                <img src="~/Awwwroot/images/GoKPlogo.png" class="float-right" style="height:40px;">
+            </div>
+        </div>
+    </nav>
+</section>
+@using (Ajax.BeginForm("Create", "registration", new AjaxOptions() { OnBegin = "begin", OnComplete = "complete", OnSuccess = "success" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+        <section class="mt-1" id="basic-detail">
+            <div class="alert alert-success">
+                <h4>Basic Detail</h4>
+            </div>
+            <div class="form-row">
+                <div class="col-md-4">
+                    @Html.LabelFor(model => model.person_name, htmlAttributes: new { @class = "control-label col-md-8" })
+                    <div class="col-md-12">
+                        @Html.EditorFor(model => model.person_name, new { htmlAttributes = new { placeholder = "Enter your name", @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.person_name, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    @Html.LabelFor(model => model.is_company, htmlAttributes: new { @class = "control-label col-md-8" })
+                    <div class="col-md-12">
+                        @Html.DropDownListFor(model => model.is_company, null, htmlAttributes: new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.is_company, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    @Html.LabelFor(model => model.basic_email_address, htmlAttributes: new { @class = "control-label col-md-8" })
+                    <div class="col-md-12">
+                        @Html.EditorFor(model => model.basic_email_address, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.basic_email_address, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    @Html.LabelFor(model => model.basic_mobile_number, htmlAttributes: new { @class = "control-label col-md-8" })
+                    <div class="col-md-12">
+                        @Html.EditorFor(model => model.basic_mobile_number, new { htmlAttributes = new { @class = "form-control", data_mask = "9999-9999999" } })
+                        @Html.ValidationMessageFor(model => model.basic_mobile_number, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    @Html.LabelFor(model => model.basic_phone_number, htmlAttributes: new { @class = "control-label col-md-8" })
+                    <div class="col-md-12">
+                        @Html.EditorFor(model => model.basic_phone_number, new { htmlAttributes = new { placeholder = "Optional", @class = "form-control", data_mask = "9999-9999999" } })
+                        @Html.ValidationMessageFor(model => model.basic_phone_number, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    @Html.LabelFor(model => model.basic_country_id, htmlAttributes: new { @class = "control-label col-md-8" })
+                    <div class="col-md-12">
+                        @Html.DropDownListFor(model => model.basic_country_id, null, htmlAttributes: new { @class = "form-control select2" })
+                        @Html.ValidationMessageFor(model => model.basic_country_id, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    @Html.LabelFor(model => model.basic_province_id, htmlAttributes: new { @class = "control-label col-md-8" })
+                    <div class="col-md-12">
+                        @Html.DropDownListFor(model => model.basic_province_id, null, htmlAttributes: new { @class = "form-control select2" })
+                        @Html.ValidationMessageFor(model => model.basic_province_id, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    @Html.LabelFor(model => model.basic_district_id, htmlAttributes: new { @class = "control-label col-md-8" })
+                    <div class="col-md-12">
+                        @Html.DropDownListFor(model => model.basic_district_id, null, htmlAttributes: new { @class = "form-control select2" })
+                        @Html.ValidationMessageFor(model => model.basic_district_id, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    @Html.LabelFor(model => model.basic_address, htmlAttributes: new { @class = "control-label col-md-8" })
+                    <div class="col-md-12">
+                        @Html.EditorFor(model => model.basic_address, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.basic_address, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    @Html.LabelFor(model => model.basic_other_details, htmlAttributes: new { @class = "control-label col-md-8" })
+                    <div class="col-md-12">
+                        <textarea class="form-control" id="basic_other_details" name="basic_other_details" placeholder="Optional"></textarea>
+                        @*@Html.EditorFor(model => model.basic_other_details, new { htmlAttributes = new { placeholder = "Optional", @class = "form-control" } })*@
+                        @Html.ValidationMessageFor(model => model.basic_other_details, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mt-2" id="business-detail">
+            <div class="alert alert-success">
+                <h4>Business Detail</h4>
+            </div>
+            <div class="form-row">
+                <div class="col-md-4">
+                    @Html.LabelFor(model => model.company_name, htmlAttributes: new { @class = "control-label col-md-8" })
+                    <div class="col-md-12">
+                        @Html.EditorFor(model => model.company_name, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.company_name, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    @Html.LabelFor(model => model.comapy_website, htmlAttributes: new { @class = "control-label col-md-8" })
+                    <div class="col-md-12">
+                        @Html.EditorFor(model => model.comapy_website, new { htmlAttributes = new {placeholder = "www.example.com", @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.comapy_website, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    @Html.LabelFor(model => model.business_email, htmlAttributes: new { @class = "control-label col-md-8" })
+                    <div class="col-md-12">
+                        @Html.EditorFor(model => model.business_email, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.business_email, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    @Html.LabelFor(model => model.office_number, htmlAttributes: new { @class = "control-label col-md-8" })
+                    <div class="col-md-12">
+                        @Html.EditorFor(model => model.office_number, new { htmlAttributes = new { @class = "form-control", data_mask = "999-999999" } })
+                        @Html.ValidationMessageFor(model => model.office_number, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    @Html.LabelFor(model => model.annual_turnover, htmlAttributes: new { @class = "control-label col-md-8" })
+                    <div class="col-md-12">
+                        @Html.EditorFor(model => model.annual_turnover, new { htmlAttributes = new { placeholder = "Enter Amount (optional)", @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.annual_turnover, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    @Html.LabelFor(model => model.contact_person_name, htmlAttributes: new { @class = "control-label col-md-8" })
+                    <div class="col-md-12">
+                        @Html.EditorFor(model => model.contact_person_name, new { htmlAttributes = new { placeholder = "Enter Focal Point Name", @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.contact_person_name, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    @Html.LabelFor(model => model.no_of_employees, htmlAttributes: new { @class = "control-label col-md-8" })
+                    <div class="col-md-12">
+                        @Html.EditorFor(model => model.no_of_employees, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.no_of_employees, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    @Html.LabelFor(model => model.operational_since, htmlAttributes: new { @class = "control-label col-md-8" })
+                    <div class="col-md-12">
+                        @Html.EditorFor(model => model.operational_since, new { htmlAttributes = new { @class = "form-control datepicker" } })
+                        @Html.ValidationMessageFor(model => model.operational_since, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    @Html.LabelFor(model => model.registration_with, htmlAttributes: new { @class = "control-label col-md-8" })
+                    <div class="col-md-12">
+                        @Html.DropDownListFor(model => model.registration_with, null, htmlAttributes: new { @class = "form-control select2" })
+                        @Html.ValidationMessageFor(model => model.registration_with, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    @Html.LabelFor(model => model.registration_with_pseb, htmlAttributes: new { @class = "control-label col-md-8" })
+                    <div class="col-md-12">
+                        @Html.DropDownListFor(model => model.registration_with_pseb, null, htmlAttributes: new { @class = "form-control select2" })
+                        @Html.ValidationMessageFor(model => model.registration_with_pseb, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    @Html.LabelFor(model => model.company_short_description, htmlAttributes: new { @class = "control-label col-md-8" })
+                    <div class="col-md-12">
+                        <textarea class="form-control" id="company_short_description" name="company_short_description"></textarea>
+                        @*@Html.EditorFor(model => model.company_short_description, new { htmlAttributes = new { @class = "form-control" } })*@
+                        @Html.ValidationMessageFor(model => model.company_short_description, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+            </div>
+
+            <div class="alert alert-success mt-2">
+                <h4>Business Headquarter</h4>
+            </div>
+            <div class="form-row">
+
+                <div class="col-md-4">
+                    @Html.LabelFor(model => model.principal_country_id, htmlAttributes: new { @class = "control-label col-md-8" })
+                    <div class="col-md-12">
+                        @Html.DropDownListFor(model => model.principal_country_id, null, htmlAttributes: new { @class = "form-control select2" })
+                        @Html.ValidationMessageFor(model => model.principal_country_id, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    @Html.LabelFor(model => model.principal_province_id, htmlAttributes: new { @class = "control-label col-md-8" })
+                    <div class="col-md-12">
+                        @Html.DropDownListFor(model => model.principal_province_id, null, htmlAttributes: new { @class = "form-control select2" })
+                        @Html.ValidationMessageFor(model => model.principal_province_id, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    @Html.LabelFor(model => model.principal_district_id, htmlAttributes: new { @class = "control-label col-md-8" })
+                    <div class="col-md-12">
+                        @Html.DropDownListFor(model => model.principal_district_id, null, htmlAttributes: new { @class = "form-control select2" })
+                        @Html.ValidationMessageFor(model => model.principal_district_id, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    @Html.LabelFor(model => model.principal_address, htmlAttributes: new { @class = "control-label col-md-8" })
+                    <div class="col-md-12">
+                        <textarea class="form-control" id="principal_address" name="principal_address"></textarea>
+                        @*@Html.EditorFor(model => model.principal_address, new { htmlAttributes = new { @class = "col-md-10 form-control" } })*@
+                        @Html.ValidationMessageFor(model => model.principal_address, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+            </div>
+            <div class="alert alert-success mt-2">
+                <h4>Regional Business</h4>
+            </div>
+            <div class="form-row">
+                <div class="col-md-6">
+                    @Html.LabelFor(model => model.business_in_kp_district_id, htmlAttributes: new { @class = "control-label col-md-8" })
+                    <div class="col-md-12">
+                        @Html.DropDownListFor(model => model.business_in_kp_district_id, null, htmlAttributes: new { @class = "form-control select2" })
+                        @Html.ValidationMessageFor(model => model.business_in_kp_district_id, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    @Html.LabelFor(model => model.city_in_kp, htmlAttributes: new { @class = "control-label col-md-8" })
+                    <div class="col-md-12">
+                        @Html.DropDownListFor(model => model.city_in_kp, null, htmlAttributes: new { @class = "form-control select2" })
+                        @Html.ValidationMessageFor(model => model.city_in_kp, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    @Html.LabelFor(model => model.regional_office_address, htmlAttributes: new { @class = "control-label col-md-8" })
+                    <div class="col-md-12">
+                        <textarea class="form-control" id="regional_office_address" name="regional_office_address"></textarea>
+                        @*@Html.EditorFor(model => model.regional_office_address, new { htmlAttributes = new { @class = "col-md-10 form-control" } })*@
+                        @Html.ValidationMessageFor(model => model.regional_office_address, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mt-2" id="employee-hr" hidden>
+            <div class="alert alert-success">
+                <h4>Employees (HR)</h4>
+            </div>
+            <div class="form-row">
+                <table class="table table-bordered" id="tbl-lst-employee">
+                    <thead>
+                        <tr>
+                            <th>Position</th>
+                            <th>Expertise</th>
+                            <th>Number Of Resouces</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @*@foreach (var emp in Model.Employee_vm)
+                            {
+                                <tr>
+                                    <td>@emp.designation_id</td>
+                                    <td>@emp.number_of_resources</td>
+                                    <td>
+                                        @foreach (var sk in emp.skills_Vm)
+                                        {
+                                            @sk.skill_id
+                                        }
+                                    </td>
+                                </tr>
+                            }*@
+                        <tr>
+                            <td>@Html.DropDownListFor(model => model.designation_id, null, htmlAttributes: new { @class = "form-control select2" })</td>
+                            <td>@Html.DropDownList("Skills", null, htmlAttributes: new { @class = "form-control select2", multiple = "multiple" })</td>
+                            <td>@Html.EditorFor(model => model.number_of_resources, new { htmlAttributes = new { @class = "form-control" } })</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3"><input type="button" class="btn btn-success btn-block" value="Add More" id="add-row" /></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </section>
+        <section class="mt-2" id="dev-bpo-services">
+            <div class="alert alert-success">
+                <h4>Services</h4>
+            </div>
+            <div class="form-group row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header bg-success">
+                            <div class="card-title text-white">
+                                Business Activities
+                            </div>
+                        </div>
+                        <div class="card-body" style="height:200px; overflow:auto;">
+                            <table class="table table-bordered">
+                                @Html.EditorFor(x => x.DevArea)
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header bg-success">
+                            <div class="card-title text-white">
+                                BPO Services
+                            </div>
+                        </div>
+                        <div class="card-body" style="height:200px; overflow:auto;">
+                            <table class="table table-bordered">
+                                @Html.EditorFor(x => x.BpoArea)
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12" hidden>
+                    <div class="card">
+                        <div class="card-header bg-success">
+                            <div class="card-title text-white">
+                                BPO Services
+                            </div>
+                        </div>
+                        <div class="card-body" style="height:200px; overflow:auto;">
+                            <table class="table table-bordered">
+                                @Html.EditorFor(x => x.ProductArea)
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="form-row hidden" id="txtservice_detail">
+                <div class="col-md-12">
+                    @Html.LabelFor(model => model.other_service_detail, htmlAttributes: new { @class = "control-label col-md-8" })
+                    <div class="col-md-12">
+                        <textarea class="form-control" id="other_service_detail" name="other_service_detail"></textarea>
+                        @*@Html.EditorFor(model => model.principal_address, new { htmlAttributes = new { @class = "col-md-10 form-control" } })*@
+                        @Html.ValidationMessageFor(model => model.other_service_detail, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col-md-12">
+                    @Html.LabelFor(model => model.hardware_info, htmlAttributes: new { @class = "control-label col-md-8" })
+                    <div class="col-md-12">
+                        <textarea class="form-control" id="hardware_info" name="hardware_info"></textarea>
+                        @*@Html.EditorFor(model => model.principal_address, new { htmlAttributes = new { @class = "col-md-10 form-control" } })*@
+                        @Html.ValidationMessageFor(model => model.hardware_info, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="form-group mt-2">
+            <div class="offset-6 col-md-5">
+                <input type="submit" value="Submit" class="btn btn-lg btn-success rounded-pill" />
+            </div>
+        </div>
+    </div>
+}
+<div class="modal" tabindex="-1" id="modalmessage" role="dialog" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+    <div class="modal-dialog modal-dialog-centered" role="document" style="width:80%;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title text-success">Information</h5>
+                <button type="button" class="close" onclick="javascript:window.location='@Url.Action("Create","registration")" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" id="mdlmessage">
+                <P class="h5">
+                    You are registered successfully with KPITB
+                </P>
+            </div>
+            <div class="modal-footer">
+                <button type="button" onclick="javascript:window.location='@Url.Action("Create","registration")'" class="btn btn-sm btn-success" data-dismiss="modal">OK</button>
+            </div>
+        </div>
+    </div>
+</div>
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    <script src="@Url.Content("~/Awwwroot/plugins/jasny/jasny-bootstrap.min.js")"></script>
+    <script>
+        $(function () {
+
+            $("#is_company").change(function () {
+                var company = $("#is_company").val();
+                if (company == 2) {
+                    $("#business-detail,#employee-hr").addClass("hidden");
+                }
+                else {
+                    $("#business-detail,#employee-hr").removeClass("hidden");
+                }
+
+                if (company == 1) {
+
+                    $("#company_name,#comapy_website,#business_email,#contact_person_name,#office_number,#operational_since,#company_short_description,#no_of_employees,#principal_address,#regional_office_address").attr("required", "required");
+                }
+                else {
+                    $("#company_name,#comapy_website,#business_email,#contact_person_name,#office_number,#operational_since,#company_short_description,#no_of_employees,#principal_address,#regional_office_address").removeAttr("required");
+                }
+            });
+
+            $("#is_company").val("1").trigger("change");
+
+
+            $('#DevArea_26__Checked').change(function () {
+                var isChecked = $(this).is(":checked");
+                var isCheckedBpo = $("#BpoArea_10__Checked").is(":checked");
+
+                if (isChecked==true || isCheckedBpo==true) {
+                    $("#txtservice_detail").removeClass("hidden");
+                }
+                else {
+                    $("#txtservice_detail").addClass("hidden");
+                }
+            });
+
+            $('#BpoArea_10__Checked"').change(function () {
+                var isCheckedBpo = $(this).is(":checked");
+
+                if (isCheckedBpo==true) {
+                    $("#txtservice_detail").removeClass("hidden");
+                }
+                else {
+                    $("#txtservice_detail").addClass("hidden");
+                }
+            });
+        });
+
+        function begin() {
+            ily.HTML.Loader.Show();
+        }
+        function complete() {
+            ily.HTML.Loader.Hide();
+        }
+        function success() {
+            ily.HTML.Loader.Hide();
+         $('#modalmessage').modal('show');
+
+        }
+
+        function getSkills() {
+            $.ajax({
+                url: '@Url.Action("GetSkills","Dropdown")',
+                type: "get",
+                dataType: "json",
+                contentType: "application/json",
+                async:true,
+                success: function (response) {
+                     //$('#Skills').empty();
+                    $.each(response, function (i,x) {
+
+                        $('#Skills').append('<option value=' + x.skill_id + '>'+x.skill_name+'</option>');
+                    });
+
+                }
+            });
+        }
+        function getPositions() {
+            $.ajax({
+                url: '@Url.Action("GetPositions","Dropdown")',
+                type: "get",
+                dataType: "json",
+                contentType: "application/json",
+                async:true,
+                success: function (response) {
+                    //console.log(response);
+                   //$('#designation_id').empty();
+                    $.each(response, function (i,x) {
+                        $('#designation_id').append('<option value=' + x.position_id + '>' + x.position_title + '</option>');
+                    });
+
+                }
+            });
+    }
+    </script>
+    <script>
+        $(function () {
+            $(document).on('click', '#add-row', function () {
+                //var addcols = $('#tbl-lst-employee tbody').find('tr:first').clone();
+                var addcols = "<tr>"
+                addcols += "<td><select class='col-md-3 form-control select2' id='designation_id' name='designationa_id'></select></td>"
+                addcols += "<td><select multiple='multiple' class='form-control' id='Skills' name='Skills'></select></td>"
+                addcols += "<td><input type='text' class='form-control' name='number_of_resources' placeholder='Number' /></td>"
+                addcols += "</tr>";
+                $("#tbl-lst-employee tbody").append(addcols);
+                getPositions();
+                getSkills();
+                $('#Skills').select2();
+                $('#designation_id').select2();
+            });
+        });
+
+
+    </script>
+}

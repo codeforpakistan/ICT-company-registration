@@ -1,0 +1,116 @@
+﻿@model IEnumerable<RegistrationsOfCompanies.Models.basic_detail>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="form-row mt-4">
+    <div class="col-md-12">
+        <div class="row">
+            <div class="col-md-4">
+                <a class="btn btn-success" href="@Url.Action("Create")"><i class="fa fa-plus"></i> Add New</a>
+            </div>
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <div class="input-group">
+                    <input type="text" id="txt-search-patient" placeholder="Search..." class="form-control">
+                    <span class="input-group-append">
+                        <button type="button" class="btn btn-success">
+                            <i class="fa fa-search"></i> Search
+                        </button>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <table class="table table-bordered mt-1">
+            <thead>
+                <tr>
+                    <th>
+                        Name
+                    </th>
+                    <th>
+                        Company
+                    </th>
+                    <th>
+                        Email
+                    </th>
+                    <th>
+                        Mobile #
+                    </th>
+                    <th>
+                        Phone
+                    </th>
+                    <th>
+                        Country
+                    </th>
+                    <th>
+                        Province
+                    </th>
+                    <th>
+                        District
+                    </th>
+                    <th>
+                        Address
+                    </th>
+                    <th>
+                        Other Details
+                    </th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.name)
+                    </td>
+                    @if (item.is_company == 1)
+                    {
+                        <td>
+                            Company
+                        </td>
+                    }
+                    else
+                    {
+                        <td>
+                            Individual/Freelacer
+                        </td>
+                    }
+
+                    <td>
+                        @Html.DisplayFor(modelItem => item.email_address)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.mobile_number)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.phone_number)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.country.country_name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.province.province_name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.district.district_name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.address)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.other_details)
+                    </td>
+                    <td style="width:10%">
+                        <a class="btn btn-success btn-sm" href="@Url.Action("Edit", new { id = item.basic_id })"><i class="fa fa-pen"></i></a>
+                        <a hidden class="btn btn-danger btn-sm" data-id="@item.basic_id" onclick="deleteBasic(this)"><i class="fa fa-trash"></i></a>
+                    </td>
+                </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,106 @@
+﻿@model RegistrationsOfCompanies.Models.basic_detail
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>basic_detail</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.is_company)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.is_company)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.company_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.company_name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.email_address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.email_address)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.mobile_number)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.mobile_number)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.phone_number)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.phone_number)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.country_id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.country_id)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.province_id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.province_id)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.district_id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.district_id)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.address)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.other_details)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.other_details)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.basic_id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

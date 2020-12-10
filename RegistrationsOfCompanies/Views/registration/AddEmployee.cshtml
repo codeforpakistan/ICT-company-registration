@@ -1,0 +1,122 @@
+﻿@*@model RegistrationsOfCompanies.Models.Employee
+    @{
+        ViewBag.Title = "AddEmployee";
+    }
+    @using (Ajax.BeginForm("AddEmployee", "registration", new AjaxOptions() { OnBegin = "begin", OnComplete = "complete", OnSuccess = "success" }))
+    {
+
+        <section class="mt-2" id="employee-hr">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="alert alert-success">
+                        <h4>Employee (HR)</h4>
+                    </div>
+                    <div class="form-row">
+                        <div class="col">
+                            @Html.HiddenFor(x => x.BasicID)
+                            <label class="control-label">Name</label>
+                            @Html.TextBoxFor(x => x.Name, htmlAttributes: new { @class = "form-control" })
+                            @Html.ValidationMessageFor(x => x.Name)
+                        </div>
+                        <div class="col">
+                            <label class="control-label">Email</label>
+                            @Html.TextBoxFor(x => x.EmailAddress, htmlAttributes: new { @class = "form-control" })
+                            @Html.ValidationMessageFor(x => x.EmailAddress)
+                        </div>
+                        <div class="col">
+                            <label class="control-label">Mobile No</label>
+                            @Html.TextBoxFor(x => x.MobileNo, htmlAttributes: new { @class = "form-control" })
+                            @Html.ValidationMessageFor(x => x.MobileNo)
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col">
+                            <label class="control-label">Number of hours</label>
+                            @Html.TextBoxFor(x => x.NumberOfHr, htmlAttributes: new { @class = "form-control" })
+                            @Html.ValidationMessageFor(x => x.NumberOfHr)
+                        </div>
+                        <div class="col">
+                            <label class="control-label">Designation</label>
+                            @Html.DropDownList("DesignationID", null, htmlAttributes: new { @class = "form-control select2" })
+                            @Html.ValidationMessageFor(x => x.DesignationID)
+                        </div>
+
+                        <div class="col">
+                            <label class="col">Skills</label>
+                            @Html.DropDownList("Skills", null, htmlAttributes: new { @class = "form-control select2", multiple = "multiple" })
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-md-12">
+                    <button type="submit" class="btn btn-success" id="btnSave"> Save</button>
+                </div>
+            </div>
+        </section>
+    }
+    <div id="employees" class="container-fluid mt-2">
+        @Html.Action("DisplayEmployee", "registration", new { companyid = Model.BasicID })
+    </div>*@
+    @section Scripts {
+        @Scripts.Render("~/bundles/jqueryval")
+        <script src="@Url.Content("~/Scripts/jquery.unobtrusive-ajax.min.js")"></script>
+        <script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")"></script>
+
+        <script>
+            $(function () {
+                $('#btnSave').on('submit', function () {
+                    var name = $('#Skills').val().length
+                    if (name == 0) {
+                        $('#Skills').attr('required','required');
+                    }
+                    else {
+                        $('#Skills').removeAttr('required');
+                    }
+                });
+
+            });
+
+
+
+            function deleteEmployee(empid) {
+                var employeeId = $(empid).data('id');
+                var tr = $(empid).parent('td').parent('tr');
+                ily.HTML.Confirm.Show({ message: "Do you want to delete", title: "warning", type: "warning" }, function () {
+                    $.ajax({
+                        url: "/registration/Delete",
+                        contentType: "application/json",
+                        dataType: "Json",
+                        data: "{id:'" + employeeId + "'}",
+                        type: "Post",
+                        success: function (data) {
+                            if (!data.result.Error) {
+                                // ily.HTML.Alert.Show({ message: "Record deleted successfully", title: "success", type: "success" });
+                                $(tr).fadeOut(500);
+                            }
+                        }
+                    });
+                });
+            }
+
+
+
+            function begin() {
+            }
+            function complete() {
+            }
+            function success() {
+                var compid = $('#BasicID').val();
+                $.ajax({
+                    url: "/registration/DisplayEmployee?companyid=" + compid,
+                    dataType: "html",
+                    contentType: "application/html; charset='utf-8'",
+                    success: function (response) {
+                        $('#employees').html(response);
+                    }
+                });
+            }
+        </script>
+    }
+
+

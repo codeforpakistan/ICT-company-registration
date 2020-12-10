@@ -1,0 +1,62 @@
+﻿@model List<RegistrationsOfCompanies.Models.Employee>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Designation</th>
+            <th>Email</th>
+            <th>Mobile</th>
+            <th>Skills</th>
+            <th>Number of Hr</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>@item.Name</td>
+            <td>@item.position.position_title</td>
+            <td>@item.EmailAddress</td>
+            <td>@item.MobileNo</td>
+            <td>@foreach (var sk in item.employee_skills)
+            {
+                @(sk.skill.skill_name+", ")
+            }
+            </td>
+            <td>@item.NumberOfHr</td>
+            <td>
+                <button type="button" id="btnRemove" data-id="@item.EmployeeID" onclick="deleteEmployee(this)" value="Remove" class="btn btn-danger btn-sm" ><i class="fa fa-trash"></i></button>
+            </td>
+        </tr>
+            
+                
+            
+        }
+    </tbody>
+</table>
+@section Scripts{
+    <script>
+        function deleteEmployee(empid) {
+            var employeeId = $(empid).data('id');
+            var tr = $(empid).parent('td').parent('tr');
+            ily.HTML.Confirm.Show({ message: "Do you want to delete", title: "warning", type: "warning" }, function () {
+                $.ajax({
+                    url: "/registration/Delete",
+                    contentType: "application/json",
+                    dataType: "Json",
+                    data: "{id:'" + employeeId + "'}",
+                    type: "Post",
+                    success: function (data) {
+                        if (!data.result.Error) {
+                            ily.HTML.Alert.Show({ message: "Record deleted successfully", title: "success", type: "success" });
+                            $(tr).fadeOut(500);
+                        }
+                    }
+                });
+            });
+        }
+    </script>
+
+
+}

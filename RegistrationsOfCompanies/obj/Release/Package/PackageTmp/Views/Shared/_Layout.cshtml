@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Company Registration</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    <link href="@Url.Content("~/Awwwroot/plugins/select2/select2i.min.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/Awwwroot/fontawesome/css/all.min.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/Awwwroot/plugins/bootstrap-datepicker/bootstrap-datepicker.min.css")" rel="stylesheet" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color:#055208;">
+        <a class="navbar-brand" href="#">Company Registration</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item " hidden>
+                    <a class="nav-link" href="@Url.Action("Index","Home")">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="@Url.Action("Create","registration")">Register</a>
+                </li>
+            </ul>
+        </div>
+        @*@Html.Partial("_LoginPartial")*@
+    </nav>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; KPITB @DateTime.Now.Year - Registration of ICT Companies</p>
+        </footer>
+    </div>
+
+
+    @Scripts.Render("~/bundles/bootstrap")
+    <script src="@Url.Content("~/Awwwroot/plugins/select2/select2i.min.js")"></script>
+    <script src="@Url.Content("~/Awwwroot/js/sweetalert/sweetalert2@9.js")"></script>
+    <script src="@Url.Content("~/Awwwroot/js/blockui/jquery.blockUI.js")"></script>
+    <script src="@Url.Content("~/Awwwroot/plugins/bootstrap-datepicker/bootstrap-datepicker.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/jquery.unobtrusive-ajax.min.js")"></script>
+    <script src="@Url.Content("~/Awwwroot/js/CommonScript.js")"></script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>

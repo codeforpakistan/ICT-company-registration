@@ -1,0 +1,13 @@
+﻿@model RegistrationsOfCompanies.Models.MultiCheckListBox
+<tr>
+    <td>
+        @Html.HiddenFor(x => x.ID)
+        @Html.LabelFor(x => x.DisplayLabel, htmlAttributes: new { @style = "display:none;" })
+        @Html.CheckBoxFor(x => x.Checked, htmlAttributes: new { onclick = Model.checkboxOnClick })
+    </td>
+    <td>
+        @Html.LabelFor(x => x.Checked, Model.DisplayLabel)
+    </td>
+</tr>
+
+

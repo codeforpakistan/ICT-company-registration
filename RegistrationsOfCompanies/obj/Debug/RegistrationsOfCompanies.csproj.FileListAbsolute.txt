@@ -1,0 +1,183 @@
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\bin\RegistrationsOfCompanies.dll.config
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\bin\RegistrationsOfCompanies.dll
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\bin\RegistrationsOfCompanies.pdb
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\bin\roslyn\csc.exe
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\bin\roslyn\csc.exe.config
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\bin\roslyn\csc.rsp
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\bin\roslyn\csi.exe
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\bin\roslyn\csi.rsp
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\bin\roslyn\System.AppContext.dll
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\bin\roslyn\vbc.exe
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\bin\roslyn\vbc.exe.config
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\bin\roslyn\vbc.rsp
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\bin\roslyn\VBCSCompiler.exe
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\bin\Antlr3.Runtime.dll
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\bin\EntityFramework.dll
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\bin\EntityFramework.SqlServer.dll
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\bin\Microsoft.Owin.dll
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\bin\Microsoft.Owin.Security.dll
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\bin\Newtonsoft.Json.dll
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\bin\Owin.dll
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\bin\System.Web.Helpers.dll
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\bin\System.Web.Mvc.dll
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\bin\System.Web.Optimization.dll
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\bin\System.Web.Razor.dll
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\bin\System.Web.WebPages.Deployment.dll
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\bin\System.Web.WebPages.dll
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\bin\System.Web.WebPages.Razor.dll
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\bin\WebGrease.dll
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\bin\System.Web.Helpers.xml
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\bin\System.Web.Mvc.xml
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\bin\System.Web.Optimization.xml
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\bin\System.Web.Razor.xml
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\bin\System.Web.WebPages.xml
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\bin\System.Web.WebPages.Deployment.xml
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\bin\System.Web.WebPages.Razor.xml
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\bin\Newtonsoft.Json.xml
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\bin\Antlr3.Runtime.pdb
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\bin\EntityFramework.xml
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\bin\EntityFramework.SqlServer.xml
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\bin\Microsoft.Owin.xml
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\bin\Microsoft.Owin.Security.xml
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\obj\Debug\RegistrationsOfCompanies.csprojAssemblyReference.cache
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\obj\Debug\RegistrationsOfCompanies.csproj.CoreCompileInputs.cache
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\obj\Debug\RegistrationsOfCompanies.csproj.CopyComplete
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\obj\Debug\RegistrationsOfCompanies.dll
+C:\Users\KP IT Board\Documents\Visual Studio 2017\Backup Files\RegistrationsOfCompanies\RegistrationsOfCompanies\obj\Debug\RegistrationsOfCompanies.pdb
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\RegistrationsOfCompanies.dll.config
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\RegistrationsOfCompanies.dll
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\RegistrationsOfCompanies.pdb
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\roslyn\csc.exe
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\roslyn\csc.exe.config
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\roslyn\csc.rsp
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\roslyn\csi.exe
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\roslyn\csi.rsp
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\roslyn\System.AppContext.dll
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\roslyn\System.Collections.Immutable.dll
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\roslyn\System.IO.FileSystem.dll
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\roslyn\System.Reflection.Metadata.dll
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\roslyn\vbc.exe
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\roslyn\vbc.exe.config
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\roslyn\vbc.rsp
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\roslyn\VBCSCompiler.exe
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\roslyn\VBCSCompiler.exe.config
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\Antlr3.Runtime.dll
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\EntityFramework.dll
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\EntityFramework.SqlServer.dll
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\Microsoft.AspNet.Identity.Core.dll
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\Microsoft.Owin.dll
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\Microsoft.Owin.Security.Cookies.dll
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\Microsoft.Owin.Security.dll
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\Microsoft.Owin.Security.Facebook.dll
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\Microsoft.Owin.Security.Google.dll
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\Microsoft.Owin.Security.OAuth.dll
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\Microsoft.Owin.Security.Twitter.dll
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\Microsoft.Web.Infrastructure.dll
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\Newtonsoft.Json.dll
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\Owin.dll
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\System.Buffers.dll
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\System.Diagnostics.DiagnosticSource.dll
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\System.Memory.dll
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\System.Runtime.CompilerServices.Unsafe.dll
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\System.Web.Helpers.dll
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\System.Web.Mvc.dll
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\System.Web.Optimization.dll
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\System.Web.Razor.dll
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\System.Web.WebPages.Deployment.dll
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\System.Web.WebPages.dll
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\System.Web.WebPages.Razor.dll
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\WebGrease.dll
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\EntityFramework.xml
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\EntityFramework.SqlServer.xml
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\Microsoft.AspNet.Identity.Core.xml
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\Microsoft.Owin.xml
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\Microsoft.Owin.Security.xml
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\Microsoft.Owin.Security.Cookies.xml
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\Microsoft.Owin.Security.Facebook.xml
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\Microsoft.Owin.Security.Google.xml
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\Microsoft.Owin.Security.OAuth.xml
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\Microsoft.Owin.Security.Twitter.xml
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\Newtonsoft.Json.xml
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\System.Buffers.xml
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\System.Diagnostics.DiagnosticSource.xml
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\System.Memory.xml
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\System.Runtime.CompilerServices.Unsafe.xml
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\System.Web.Helpers.xml
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\System.Web.Mvc.xml
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\System.Web.Razor.xml
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\System.Web.WebPages.xml
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\System.Web.WebPages.Deployment.xml
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\System.Web.WebPages.Razor.xml
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\System.Web.Optimization.xml
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\bin\Antlr3.Runtime.pdb
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\obj\Debug\RegistrationsOfCompanies.csproj.CopyComplete
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\obj\Debug\RegistrationsOfCompanies.dll
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\obj\Debug\RegistrationsOfCompanies.pdb
+E:\Fellowship2020\RegistrationofCompanies\RegistrationsOfCompanies\obj\Debug\RegistrationsOfCompanies.csprojAssemblyReference.cache

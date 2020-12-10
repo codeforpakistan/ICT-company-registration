@@ -1,0 +1,417 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="companies_registrationModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="basic_detail">
+    <Key>
+      <PropertyRef Name="basic_id" />
+    </Key>
+    <Property Name="basic_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="250" Nullable="false" />
+    <Property Name="is_company" Type="int" Nullable="false" />
+    <Property Name="email_address" Type="varchar" MaxLength="250" Nullable="false" />
+    <Property Name="mobile_number" Type="varchar" MaxLength="250" Nullable="false" />
+    <Property Name="phone_number" Type="varchar" MaxLength="250" />
+    <Property Name="country_id" Type="int" Nullable="false" />
+    <Property Name="province_id" Type="int" Nullable="false" />
+    <Property Name="district_id" Type="int" Nullable="false" />
+    <Property Name="address" Type="nvarchar(max)" />
+    <Property Name="other_details" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="business_detail">
+    <Key>
+      <PropertyRef Name="business_id" />
+    </Key>
+    <Property Name="business_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="basic_id" Type="int" Nullable="false" />
+    <Property Name="principal_country_id" Type="int" />
+    <Property Name="princiapal_province_id" Type="int" />
+    <Property Name="principal_distict_id" Type="int" />
+    <Property Name="business_in_kp_district_id" Type="int" Nullable="false" />
+    <Property Name="city_in_kp" Type="int" Nullable="false" />
+    <Property Name="company_name" Type="varchar" MaxLength="250" />
+    <Property Name="comapy_website" Type="varchar(max)" />
+    <Property Name="business_email" Type="varchar" MaxLength="250" Nullable="false" />
+    <Property Name="contact_person_name" Type="varchar" MaxLength="250" />
+    <Property Name="office_number" Type="varchar" MaxLength="20" />
+    <Property Name="annual_turnover" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="principal_address" Type="nvarchar(max)" />
+    <Property Name="regional_office_address" Type="nvarchar(max)" />
+    <Property Name="operational_since" Type="date" />
+    <Property Name="registration_with" Type="nvarchar" MaxLength="150" />
+    <Property Name="registration_with_pseb" Type="nvarchar" MaxLength="50" />
+    <Property Name="company_short_description" Type="nvarchar(max)" />
+    <Property Name="no_of_employees" Type="int" />
+    <Property Name="hardware_info" Type="nvarchar(max)" />
+    <Property Name="other_service_detail" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="cities">
+    <Key>
+      <PropertyRef Name="CityId" />
+    </Key>
+    <Property Name="CityId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CityName" Type="nvarchar" MaxLength="150" />
+    <Property Name="ProvinceId" Type="int" />
+  </EntityType>
+  <EntityType Name="countries">
+    <Key>
+      <PropertyRef Name="country_id" />
+    </Key>
+    <Property Name="country_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="country_name" Type="nvarchar" MaxLength="250" />
+    <Property Name="country_code" Type="varchar" MaxLength="2" />
+    <Property Name="language" Type="varchar" MaxLength="3" />
+  </EntityType>
+  <EntityType Name="dev_bpo_area">
+    <Key>
+      <PropertyRef Name="dev_bpo_area_id" />
+    </Key>
+    <Property Name="dev_bpo_area_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="basic_ID" Type="int" />
+    <Property Name="AreaID" Type="int" />
+  </EntityType>
+  <EntityType Name="district">
+    <Key>
+      <PropertyRef Name="district_id" />
+    </Key>
+    <Property Name="district_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="district_name" Type="nvarchar" MaxLength="250" />
+    <Property Name="province_id" Type="int" />
+  </EntityType>
+  <EntityType Name="employee_detail">
+    <Key>
+      <PropertyRef Name="employee_id" />
+    </Key>
+    <Property Name="employee_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="basic_id" Type="int" Nullable="false" />
+    <Property Name="designation_id" Type="int" Nullable="false" />
+    <Property Name="number_of_resources" Type="decimal" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="employee_skills">
+    <Key>
+      <PropertyRef Name="employee_skills_id" />
+    </Key>
+    <Property Name="employee_skills_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="employee_id" Type="int" />
+    <Property Name="skill_id" Type="int" />
+  </EntityType>
+  <EntityType Name="position">
+    <Key>
+      <PropertyRef Name="position_id" />
+    </Key>
+    <Property Name="position_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="position_title" Type="nvarchar" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="province">
+    <Key>
+      <PropertyRef Name="province_id" />
+    </Key>
+    <Property Name="province_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="province_name" Type="nvarchar" MaxLength="250" />
+    <Property Name="country_id" Type="int" />
+  </EntityType>
+  <EntityType Name="ServicesArea">
+    <Key>
+      <PropertyRef Name="AreaID" />
+    </Key>
+    <Property Name="AreaID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AreaType" Type="varchar" MaxLength="50" />
+    <Property Name="AreaName" Type="varchar" MaxLength="150" />
+  </EntityType>
+  <EntityType Name="skills">
+    <Key>
+      <PropertyRef Name="skill_id" />
+    </Key>
+    <Property Name="skill_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="skill_name" Type="varchar" MaxLength="250" Nullable="false" />
+  </EntityType>
+  <EntityType Name="system_user">
+    <Key>
+      <PropertyRef Name="user_id" />
+    </Key>
+    <Property Name="user_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="role_id" Type="int" Nullable="false" />
+    <Property Name="email_id" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="password" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="is_active" Type="int" />
+    <Property Name="other_detail" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="user_role">
+    <Key>
+      <PropertyRef Name="role_id" />
+    </Key>
+    <Property Name="role_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="role_title" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="role_details" Type="varchar" MaxLength="500" />
+  </EntityType>
+  <Association Name="FK_basic_detail_country">
+    <End Role="countries" Type="Self.countries" Multiplicity="1" />
+    <End Role="basic_detail" Type="Self.basic_detail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="countries">
+        <PropertyRef Name="country_id" />
+      </Principal>
+      <Dependent Role="basic_detail">
+        <PropertyRef Name="country_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_basic_detail_district">
+    <End Role="district" Type="Self.district" Multiplicity="1" />
+    <End Role="basic_detail" Type="Self.basic_detail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="district">
+        <PropertyRef Name="district_id" />
+      </Principal>
+      <Dependent Role="basic_detail">
+        <PropertyRef Name="district_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_basic_detail_province">
+    <End Role="province" Type="Self.province" Multiplicity="1" />
+    <End Role="basic_detail" Type="Self.basic_detail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="province">
+        <PropertyRef Name="province_id" />
+      </Principal>
+      <Dependent Role="basic_detail">
+        <PropertyRef Name="province_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_business_detail_basic_detail">
+    <End Role="basic_detail" Type="Self.basic_detail" Multiplicity="1" />
+    <End Role="business_detail" Type="Self.business_detail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="basic_detail">
+        <PropertyRef Name="basic_id" />
+      </Principal>
+      <Dependent Role="business_detail">
+        <PropertyRef Name="basic_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_business_detail_Cities">
+    <End Role="cities" Type="Self.cities" Multiplicity="1" />
+    <End Role="business_detail" Type="Self.business_detail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="cities">
+        <PropertyRef Name="CityId" />
+      </Principal>
+      <Dependent Role="business_detail">
+        <PropertyRef Name="city_in_kp" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_business_detail_country">
+    <End Role="countries" Type="Self.countries" Multiplicity="0..1" />
+    <End Role="business_detail" Type="Self.business_detail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="countries">
+        <PropertyRef Name="country_id" />
+      </Principal>
+      <Dependent Role="business_detail">
+        <PropertyRef Name="principal_country_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_business_detail_district">
+    <End Role="district" Type="Self.district" Multiplicity="0..1" />
+    <End Role="business_detail" Type="Self.business_detail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="district">
+        <PropertyRef Name="district_id" />
+      </Principal>
+      <Dependent Role="business_detail">
+        <PropertyRef Name="principal_distict_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_business_detail_province">
+    <End Role="province" Type="Self.province" Multiplicity="0..1" />
+    <End Role="business_detail" Type="Self.business_detail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="province">
+        <PropertyRef Name="province_id" />
+      </Principal>
+      <Dependent Role="business_detail">
+        <PropertyRef Name="princiapal_province_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dev_bpo_area_basic_detail">
+    <End Role="basic_detail" Type="Self.basic_detail" Multiplicity="0..1" />
+    <End Role="dev_bpo_area" Type="Self.dev_bpo_area" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="basic_detail">
+        <PropertyRef Name="basic_id" />
+      </Principal>
+      <Dependent Role="dev_bpo_area">
+        <PropertyRef Name="basic_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_district_province">
+    <End Role="province" Type="Self.province" Multiplicity="0..1" />
+    <End Role="district" Type="Self.district" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="province">
+        <PropertyRef Name="province_id" />
+      </Principal>
+      <Dependent Role="district">
+        <PropertyRef Name="province_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Employee_basic_detail">
+    <End Role="basic_detail" Type="Self.basic_detail" Multiplicity="1" />
+    <End Role="employee_detail" Type="Self.employee_detail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="basic_detail">
+        <PropertyRef Name="basic_id" />
+      </Principal>
+      <Dependent Role="employee_detail">
+        <PropertyRef Name="basic_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Employee_position">
+    <End Role="position" Type="Self.position" Multiplicity="1" />
+    <End Role="employee_detail" Type="Self.employee_detail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="position">
+        <PropertyRef Name="position_id" />
+      </Principal>
+      <Dependent Role="employee_detail">
+        <PropertyRef Name="designation_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_employee_skills_Employee">
+    <End Role="employee_detail" Type="Self.employee_detail" Multiplicity="0..1" />
+    <End Role="employee_skills" Type="Self.employee_skills" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="employee_detail">
+        <PropertyRef Name="employee_id" />
+      </Principal>
+      <Dependent Role="employee_skills">
+        <PropertyRef Name="employee_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_employee_skills_skills">
+    <End Role="skills" Type="Self.skills" Multiplicity="0..1" />
+    <End Role="employee_skills" Type="Self.employee_skills" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="skills">
+        <PropertyRef Name="skill_id" />
+      </Principal>
+      <Dependent Role="employee_skills">
+        <PropertyRef Name="skill_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_province_country">
+    <End Role="countries" Type="Self.countries" Multiplicity="0..1" />
+    <End Role="province" Type="Self.province" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="countries">
+        <PropertyRef Name="country_id" />
+      </Principal>
+      <Dependent Role="province">
+        <PropertyRef Name="country_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_system_user_user_role">
+    <End Role="user_role" Type="Self.user_role" Multiplicity="1" />
+    <End Role="system_user" Type="Self.system_user" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="user_role">
+        <PropertyRef Name="role_id" />
+      </Principal>
+      <Dependent Role="system_user">
+        <PropertyRef Name="role_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="companies_registrationModelStoreContainer">
+    <EntitySet Name="basic_detail" EntityType="Self.basic_detail" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="business_detail" EntityType="Self.business_detail" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="cities" EntityType="Self.cities" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="countries" EntityType="Self.countries" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="dev_bpo_area" EntityType="Self.dev_bpo_area" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="district" EntityType="Self.district" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="employee_detail" EntityType="Self.employee_detail" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="employee_skills" EntityType="Self.employee_skills" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="position" EntityType="Self.position" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="province" EntityType="Self.province" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ServicesArea" EntityType="Self.ServicesArea" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="skills" EntityType="Self.skills" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="system_user" EntityType="Self.system_user" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="user_role" EntityType="Self.user_role" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_basic_detail_country" Association="Self.FK_basic_detail_country">
+      <End Role="countries" EntitySet="countries" />
+      <End Role="basic_detail" EntitySet="basic_detail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_basic_detail_district" Association="Self.FK_basic_detail_district">
+      <End Role="district" EntitySet="district" />
+      <End Role="basic_detail" EntitySet="basic_detail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_basic_detail_province" Association="Self.FK_basic_detail_province">
+      <End Role="province" EntitySet="province" />
+      <End Role="basic_detail" EntitySet="basic_detail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_business_detail_basic_detail" Association="Self.FK_business_detail_basic_detail">
+      <End Role="basic_detail" EntitySet="basic_detail" />
+      <End Role="business_detail" EntitySet="business_detail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_business_detail_Cities" Association="Self.FK_business_detail_Cities">
+      <End Role="cities" EntitySet="cities" />
+      <End Role="business_detail" EntitySet="business_detail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_business_detail_country" Association="Self.FK_business_detail_country">
+      <End Role="countries" EntitySet="countries" />
+      <End Role="business_detail" EntitySet="business_detail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_business_detail_district" Association="Self.FK_business_detail_district">
+      <End Role="district" EntitySet="district" />
+      <End Role="business_detail" EntitySet="business_detail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_business_detail_province" Association="Self.FK_business_detail_province">
+      <End Role="province" EntitySet="province" />
+      <End Role="business_detail" EntitySet="business_detail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dev_bpo_area_basic_detail" Association="Self.FK_dev_bpo_area_basic_detail">
+      <End Role="basic_detail" EntitySet="basic_detail" />
+      <End Role="dev_bpo_area" EntitySet="dev_bpo_area" />
+    </AssociationSet>
+    <AssociationSet Name="FK_district_province" Association="Self.FK_district_province">
+      <End Role="province" EntitySet="province" />
+      <End Role="district" EntitySet="district" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Employee_basic_detail" Association="Self.FK_Employee_basic_detail">
+      <End Role="basic_detail" EntitySet="basic_detail" />
+      <End Role="employee_detail" EntitySet="employee_detail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Employee_position" Association="Self.FK_Employee_position">
+      <End Role="position" EntitySet="position" />
+      <End Role="employee_detail" EntitySet="employee_detail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_employee_skills_Employee" Association="Self.FK_employee_skills_Employee">
+      <End Role="employee_detail" EntitySet="employee_detail" />
+      <End Role="employee_skills" EntitySet="employee_skills" />
+    </AssociationSet>
+    <AssociationSet Name="FK_employee_skills_skills" Association="Self.FK_employee_skills_skills">
+      <End Role="skills" EntitySet="skills" />
+      <End Role="employee_skills" EntitySet="employee_skills" />
+    </AssociationSet>
+    <AssociationSet Name="FK_province_country" Association="Self.FK_province_country">
+      <End Role="countries" EntitySet="countries" />
+      <End Role="province" EntitySet="province" />
+    </AssociationSet>
+    <AssociationSet Name="FK_system_user_user_role" Association="Self.FK_system_user_user_role">
+      <End Role="user_role" EntitySet="user_role" />
+      <End Role="system_user" EntitySet="system_user" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
